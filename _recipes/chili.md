@@ -5,7 +5,7 @@ ingredients:
   - 1 lb ground beef (browned)
   - 15 oz cans dark kidney beans (drained and rinsed)
   - 15 oz can of chili beans
-  - 15 can of black beans (drained and rinsed)
+  - 15 oz can of black beans (drained and rinsed)
   - 14.5 oz can of tomato sauce
   - 14.5 oz can crushed tomatoes
   - 2 cups chicken broth
