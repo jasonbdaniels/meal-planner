@@ -46,3 +46,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - _recipes/recipe-example.md
