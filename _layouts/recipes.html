@@ -1,8 +1,27 @@
 ---
 layout: default
 ---
+{% assign jsSrc = "grocery-list.js" | relative_url %}
+<script src="{{ jsSrc }}" charset="utf-8"></script>
+<script type="text/javascript">
+  var recipeIngredients = {{ page.ingredients | jsonify }};
+
+  function displayRecipeJSON(){
+    addToGroceryList();
+
+    var list = groceryList.items();
+
+    alert(JSON.stringify(list));
+  }
+
+  function addToGroceryList(){
+    groceryList.addItems("{{ page.title | slugify }}", {{ page.ingredients | jsonify }});
+  }
+</script>
 
 <h1>{{ page.title }}</h1>
+
+<button onclick="displayRecipeJSON()" type="button">+ Grocery List</button>
 
 <h2>Ingredients</h2>
 <ul>{% for ingredient in page.ingredients %}
