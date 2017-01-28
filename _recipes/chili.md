@@ -8,7 +8,7 @@ ingredients:
   - 15 oz can of black beans (drained and rinsed)
   - 14.5 oz can of tomato sauce
   - 14.5 oz can crushed tomatoes
-  - 2 cups chicken broth
+  - 1 cup chicken broth
 instructions:
   - Combine all ingredients in a large pot
   - Stir together
