@@ -1,0 +1,27 @@
+---
+layout: default
+title: Grocery List
+---
+
+{% assign jsSrc = "grocery-list.js" | relative_url %}
+<script src="{{ jsSrc }}" charset="utf-8"></script>
+<script type="text/javascript">
+  function recipeHTML(recipeKey){
+    return "<h2>" + recipeKey + "</h2>";
+  }
+
+  function groceryListHTML(){
+    var items = groceryList.items();
+    var listItemsDiv = getElementById("list-items");
+    var recipes = Object.keys(items);
+
+    for(recipe in recipes){
+      listItemsDiv.innerHTML += recipeHTML(recipe);
+    }
+  }
+</script>
+
+<div id="list-items"></div>
+<script type="text/javascript">
+
+</script>
