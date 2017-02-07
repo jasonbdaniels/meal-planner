@@ -12,8 +12,21 @@ title: Grocery List
 
     for (index in ingredients) {
       var ingredient = groceryList.ingredient(recipeKey, index);
-      var ingredientListItem = "<li>" + ingredient.amount + " : " + ingredient.unit + " : " + ingredient.type + "</li>";
+      var ingredientListItem = "<li>";
 
+      if(ingredient.amount != null) {
+        ingredientListItem += "" + ingredient.amount + " ";
+      }
+
+      if(ingredient.unit != null) {
+        ingredientListItem += "" + ingredient.unit + " ";
+      }
+
+      if(ingredient.type != null) {
+        ingredientListItem += "" + ingredient.type + " ";
+      }
+
+      ingredientListItem += "</li>";
       ingredientList += "\n\t" + ingredientListItem;
     }
 
